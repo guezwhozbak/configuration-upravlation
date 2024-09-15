@@ -6,5 +6,6 @@
 grep '^[^:]*' /etc/passwd | cut -d: -f1 | sort
 ```
 ### Вывод
+![image](https://github.com/guezwhozbak/cfg/edit/main/practice1/1.jpg)
 
 
