@@ -45,8 +45,14 @@ grep -E -o '\b[a-zA-Z_][a-zA-Z0-9_]*\b' hello.c | uniq
 ## Задача 5
 Написать программу для регистрации пользовательской команды (правильные права доступа и копирование в /usr/local/bin).
 ### Код
+Файл 5.sh :
 ```
-grep '^[^:]*' /etc/passwd | cut -d: -f1 | sort
+#!/bin/bash
+echo "Hello, world!"
+```
+```
+chmod +x 5.sh
+sudo mv 5.sh /usr/local/bin/5
 ```
 ### Вывод
 ![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/1.jpg)
