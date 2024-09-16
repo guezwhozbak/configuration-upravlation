@@ -144,6 +144,9 @@ if __name__ == "__main__":
     else:
         print("Дубликаты не найдены.")
 ```
+```
+python3 7.py
+```
 ### Вывод
 ![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/7.jpg)
 
