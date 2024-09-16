@@ -55,7 +55,7 @@ chmod +x 5.sh
 sudo mv 5.sh /usr/local/bin/5
 ```
 ### Вывод
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/1.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/5.jpg)
 
 ## Задача 6
 Написать программу для проверки наличия комментария в первой строке файлов с расширением c, js и py.
