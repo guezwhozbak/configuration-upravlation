@@ -184,7 +184,7 @@ if __name__ == "__main__":
 python3 eight.py /root/Desktop/ .py archive.tar
 ```
 ### Вывод
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/8.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/8.JPG)
 
 ## Задача 9
 Написать программу, которая заменяет в файле последовательности из 4 пробелов на символ табуляции. Входной и выходной файлы задаются аргументами.
