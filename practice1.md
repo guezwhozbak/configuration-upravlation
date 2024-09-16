@@ -60,7 +60,8 @@ sudo mv 5.sh /usr/local/bin/5
 ## Задача 6
 Написать программу для проверки наличия комментария в первой строке файлов с расширением c, js и py.
 ### Код
-```
+Файл main.py:
+```python
 # -*- coding: utf-8 -*-
 import os
 import sys
@@ -94,17 +95,57 @@ if __name__ == '__main__':
 
     check_files_in_directory(directory)
 ```
+Код в консоли:
+```
+python3 main.py ~/Desktop/питон
+```
 ### Вывод
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/1.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/6.jpg)
 
 ## Задача 7
 Написать программу для нахождения файлов-дубликатов (имеющих 1 или более копий содержимого) по заданному пути (и подкаталогам).
 ### Код
-```
-grep '^[^:]*' /etc/passwd | cut -d: -f1 | sort
+Файл 7.py
+```python
+import os
+import hashlib
+from collections import defaultdict
+
+def find_duplicates(directory):
+    hash_dict = defaultdict(list)
+
+    for dirpath, _, filenames in os.walk(directory):
+        for filename in filenames:
+            file_path = os.path.join(dirpath, filename)
+            file_hash = hash_file(file_path)
+            hash_dict[file_hash].append(file_path)
+
+    duplicates = {hash_value: paths for hash_value, paths in hash_dict.items() if len(paths) > 1}
+
+    return duplicates
+
+def hash_file(file_path):
+    hasher = hashlib.md5()
+    with open(file_path, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
+if __name__ == "__main__":
+    directory_to_search = input("Введите путь к директории: ")
+    duplicates = find_duplicates(directory_to_search)
+
+    if duplicates:
+        print("Найдены дубликаты:")
+        for hash_value, paths in duplicates.items():
+            print(f"\nХеш: {hash_value}")
+            for path in paths:
+                print(f"  {path}")
+    else:
+        print("Дубликаты не найдены.")
 ```
 ### Вывод
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/1.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/7.jpg)
 
 ## Задача 8
 Написать программу, которая находит все файлы в данном каталоге с расширением, указанным в качестве аргумента и архивирует все эти файлы в архив tar.
