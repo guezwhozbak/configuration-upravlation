@@ -4,7 +4,6 @@ import argparse
 
 
 def find_files_with_extension(directory, extension):
-    """Находит все файлы с указанным расширением в заданной директории."""
     matched_files = []
     for dirpath, _, filenames in os.walk(directory):
         for filename in filenames:
