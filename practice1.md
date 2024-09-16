@@ -20,7 +20,7 @@ cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -n 5
 ## Задача 3
 Написать программу banner средствами bash для вывода текстов.
 ### Код на Python
-```
+```python
 x = input()
 print('+', end="")
 y = [print('-', end="") for i in range(len(x) + 2)]
