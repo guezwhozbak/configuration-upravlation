@@ -159,46 +159,32 @@ python3 7.py
 ```python
 import os
 import tarfile
-import argparse
+import sys
 
 
-def find_files_with_extension(directory, extension):
-    matched_files = []
-    for dirpath, _, filenames in os.walk(directory):
-        for filename in filenames:
-            if filename.endswith(extension):
-                matched_files.append(os.path.join(dirpath, filename))
-    return matched_files
+def archive(directory, extension):
+    tar_filename = f"archive_{extension.replace('.', '')}.tar"
+
+    with tarfile.open(tar_filename, "w") as tar:
+        for file in os.listdir(directory):
+            if file.endswith(extension):
+                tar.add(os.path.join(directory, file))
+    print(f"Архив {tar_filename} создан.")
 
 
-def create_tar_archive(files, output_filename):
-    with tarfile.open(output_filename, 'w') as tar:
-        for file in files:
-            tar.add(file, arcname=os.path.basename(file))
-    print(f"Архив '{output_filename}' успешно создан.")
-
-
-if __name__ == "__eight__":
-    parser = argparse.ArgumentParser(description="Найти файлы с указанным расширением и архивировать их.")
-    parser.add_argument("directory", help="Путь к директории для поиска файлов.")
-    parser.add_argument("extension", help="Расширение файлов для поиска (например, .txt).")
-    parser.add_argument("output", help="Имя выходного файла архива (например, archive.tar).")
-
-    args = parser.parse_args()
-
-    files_to_archive = find_files_with_extension(args.directory, args.extension)
-
-    if files_to_archive:
-        create_tar_archive(files_to_archive, args.output)
+if __name__ == "__main__":
+    if len(sys.argv) < 3 or sys.argv[2][0] != ".":
+        print("Usage: ./archive.py <directory> <extension> (with .)")
     else:
-        print(f"Файлы с расширением '{args.extension}' не найдены в директории '{args.directory}'.")
+        directory, extension = sys.argv[1], sys.argv[2]
+        archive(directory, extension)
 ```
 Код в консоли:
 ```
 python3 eight.py /root/Desktop/ .py archive.tar
 ```
 ### Вывод
-Отсутствует
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/8.jpg)
 
 ## Задача 9
 Написать программу, которая заменяет в файле последовательности из 4 пробелов на символ табуляции. Входной и выходной файлы задаются аргументами.
