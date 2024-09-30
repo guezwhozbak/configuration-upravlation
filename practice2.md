@@ -22,4 +22,4 @@ def print_package_metadata(package_name):
 print_package_metadata('matplotlib')
 ```
 ### Вывод
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice1/1.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-1.jpg)
