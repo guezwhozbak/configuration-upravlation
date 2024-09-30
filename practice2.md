@@ -47,6 +47,6 @@ print_package_metadata('matplotlib')
 1. Переходим на страничку репозитория, например, [matplotlib на GitHub](https://github.com/matplotlib/matplotlib).
 ![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-1-1.jpg)
 2. Нажимаем на "Code" и выбираем "Download ZIP", чтобы скачать архив с исходным кодом.
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-1-1.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-1-2.jpg)
 3. Распаковываем в желаемую директорию.
    
