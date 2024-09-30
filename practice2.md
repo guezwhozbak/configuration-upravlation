@@ -27,19 +27,12 @@ print_package_metadata('matplotlib')
 ### Основные элементы содержимого файла:
 
 - *Name*: Название пакета.
-
 - *Version*: Версия пакета.
-
 - *Summary*: Краткое описание.
-
 - *Homepage*: URL-адрес домашней страницы проекта.
-
 - *Author*: Имя автора или команды авторов.
-
 - *Author-email*: Электронная почта автора.
-
 - *License*: Лицензия, под которой распространяется пакет.
-
 - *Requires-Dist*: Список зависимостей, необходимых для работы пакета.
 
 - *Description*: Более подробное описание пакета. (не видно на скриншоте)
@@ -56,8 +49,14 @@ print_package_metadata('matplotlib')
 ```
 npm install express
 ```
-### Вывод
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-2-1.jpg)
+### Содержимое файла со служебной информацией
 ![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-2-2.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-2-3.jpg)
+### Основные элементы содержимого файла:
+- *Name*: Название пакета.
+- *Version*: Версия пакета.
+- *License*: Тип лицензии.
+- *Dependencies*: список зависимостей, необходимых для работы пакета.
+- *Scripts*: команды, которые можно выполнять через npm.
 
    
