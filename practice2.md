@@ -65,12 +65,12 @@ npm install express
 [Репозиторий Express на GitHub](https://github.com/expressjs/express)
 ---
 ## Задача 3
-Сформировать graphviz-код и получить изображения зависимостей matplotlib и express.
+Сформировать graphviz-код и получить изображения зависимостей express и matplotlib.
 ### Зависимости matplotlib и express
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/3-1.jpg)
 ![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/3-2.jpg)
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/3-1.jpg)
 ### Файл dependencies.dot (graphviz-код)
-```
+```txt
 digraph dependencies {
     rankdir=LR;
 
