@@ -45,6 +45,8 @@ print_package_metadata('matplotlib')
 - *Description*: Более подробное описание пакета. (не видно на скриншоте)
 ### Как получить пакет без менеджера пакетов, прямо из репозитория?
 1. Переходим на страничку репозитория, например, [matplotlib на GitHub](https://github.com/matplotlib/matplotlib).
-![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-1.jpg)
-2. Нажмите на кнопку "Code" и выберите "Download ZIP", чтобы скачать архив с исходным кодом.
-3. Распакуйте архив в желаемую директорию.
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-1-1.jpg)
+2. Нажимаем на "Code" и выбираем "Download ZIP", чтобы скачать архив с исходным кодом.
+![image](https://github.com/guezwhozbak/cfg/blob/main/practice2/2-1-1.jpg)
+3. Распаковываем в желаемую директорию.
+   
