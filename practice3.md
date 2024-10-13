@@ -80,8 +80,47 @@ for i in range(10):
     print(generate_phrase(parse_bnf(BNF), 'E'))
 ```
 ### Примеры вывода
-![image])(https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-1.jpg)
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-1.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-2.jpg)
 
-![image])(https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-2.jpg)
+## №4 - Язык нулей и единиц
+
+### БНФ
+```
+E = 0 | 1 | E E
+```
+
+### Использование в коде
+
+```Python
+BNF = '''
+E = 0 | 1 | E E
+'''
+
+for i in range(10):
+    print(generate_phrase(parse_bnf(BNF), 'E'))
+```
+### Примеры вывода
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-1.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-2.jpg)
+
+## №4 - Язык правильно расставленных скобок двух видов
+
+### БНФ
+```
+E = () | {} | E E | ( E ) | { E }
+
+```
+
+### Использование в коде
+
+```Python
+BNF = '''
+E = () | {} | E E | ( E ) | { E }
+'''
+
+for i in range(1):
+    print(generate_phrase(parse_bnf(BNF), 'E'))
+```
+### Примеры вывода
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-3.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-4.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-5.jpg)
 
 
