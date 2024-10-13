@@ -82,32 +82,11 @@ for i in range(10):
 ### Примеры вывода
 ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-1.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-2.jpg)
 
-## №4 - Язык нулей и единиц
-
-### БНФ
-```
-E = 0 | 1 | E E
-```
-
-### Использование в коде
-
-```Python
-BNF = '''
-E = 0 | 1 | E E
-'''
-
-for i in range(10):
-    print(generate_phrase(parse_bnf(BNF), 'E'))
-```
-### Примеры вывода
-![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-1.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-2.jpg)
-
 ## №4 - Язык правильно расставленных скобок двух видов
 
 ### БНФ
 ```
 E = () | {} | E E | ( E ) | { E }
-
 ```
 
 ### Использование в коде
@@ -122,5 +101,47 @@ for i in range(1):
 ```
 ### Примеры вывода
 ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-3.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-4.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-5.jpg)
+
+## №5 - Язык выражений алгебры логики
+
+### БНФ
+```
+E  = T | E '|' T                   
+T  = F | T '&' F                   
+F  = 'x' | 'y' | '~' G | G         
+G  = '(' E ')' | 'x' | 'y'
+```
+
+### Использование в коде
+
+```Python
+BNF = '''
+E  = T | E '|' T                   
+T  = F | T '&' F                   
+F  = 'x' | 'y' | '~' G | G         
+G  = '(' E ')' | 'x' | 'y' 
+'''
+
+for i in range(10):
+    print(generate_phrase(parse_bnf(BNF), 'E'))
+```
+
+
+### Использование в коде
+
+Получаем вывод без кавычек с помощью метода replace().
+
+```Python
+def parse_bnf(text):
+    grammar = {}
+    rules = [line.split('=') for line in text.strip().split('\n')]
+    for name, body in rules:
+        grammar[name.strip()] = [alt.strip().replace("'","").split() for alt in body.split(' | ')]
+    return grammar
+```
+
+### Примеры вывода
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-6.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-7.jpg) ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice3/3-8.jpg)
+
 
 
