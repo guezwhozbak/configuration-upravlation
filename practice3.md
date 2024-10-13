@@ -52,7 +52,7 @@ let groups = List (Group) [ "ИКБО-1-20", "ИКБО-2-20", "ИКБО-3-20", "
 let students = List (Student) [ { age = 19, group = "ИКБО-4-20", name = "Иванов И.И." }
                                , { age = 18, group = "ИКБО-5-20", name = "Петров П.П." }
                                , { age = 18, group = "ИКБО-5-20", name = "Сидоров С.С." }
-                               , { age: 33, group: "ИКБО-62-23", name: "Тревис Скотт" }
+                               , { age = 33, group = "ИКБО-62-23", name = "Тревис Скотт" }
                                ]
 
 in { groups = groups, students = students, subject = "Конфигурационное управление" }
