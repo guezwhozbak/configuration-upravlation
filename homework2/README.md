@@ -11,10 +11,12 @@
 - `--date`: Дата коммитов в репозитории (формат YYYY-MM-DD).
 
 ## Описание команд для сборки проекта
-
-python -m unittest discover -s tests
 ```bash
+# Установка зависимостей
 pip install -r requirements.txt
+# Запуск тестирования
+python -m unittest discover -s src/tests
+# Запуск скрипта
 python src/main.py --graphviz_path /path/to/graphviz --repo_path /path/to/repo --date YYYY-MM-DD
 ```
 
