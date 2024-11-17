@@ -12,6 +12,7 @@
 
 ## Описание команд для сборки проекта
 
+python -m unittest discover -s tests
 ```bash
 pip install -r requirements.txt
 python src/main.py --graphviz_path /path/to/graphviz --repo_path /path/to/repo --date YYYY-MM-DD
