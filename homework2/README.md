@@ -22,7 +22,12 @@ python src/main.py --graphviz_path /path/to/graphviz --repo_path /path/to/repo -
 
 ## Примеры использования
 
+Тестирование и запуск скрипта:
+
 ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework2/screenshots/hw2_1.jpg)
+
+Полученный граф:
+
 ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework2/screenshots/hw2_2.jpg)
 
 ## Результаты прогона тестов
