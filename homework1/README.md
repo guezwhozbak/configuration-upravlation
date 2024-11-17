@@ -36,6 +36,17 @@ python -m src.main --hostname "guezwhozbak" --fs_path "virtual_fs.zip" --log_pat
 ```
 ## Примеры использования
 
+Запуск тестирования:
+
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework1/screenshots/hw1_2.jpg)
+
+Запуск эмулятора:
+
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework1/screenshots/hw1_1.jpg)
+
+Работа эмулятора:
+
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework1/screenshots/hw1_3.jpg)
 ## Результаты прогона тестов
 
 Для запуска тестирования выполните следующую команду:
