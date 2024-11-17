@@ -24,8 +24,3 @@ def find(path, name):
 
 def ls(path):
     return os.listdir(path)
-
-
-
-
-
