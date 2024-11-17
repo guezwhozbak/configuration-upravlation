@@ -1,5 +1,3 @@
-"Точка входа в программу"
-
 import argparse
 from src.shell import ShellGUI
 
