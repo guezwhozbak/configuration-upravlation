@@ -1,6 +1,5 @@
 import unittest
 from src.graph_builder import build_graph
-from git import Repo
 from datetime import datetime, timezone
 
 class TestGraphBuilder(unittest.TestCase):
