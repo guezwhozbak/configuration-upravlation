@@ -26,10 +26,6 @@
 
 Для сборки и запуска проекта выполните следующие команды:
 
-#### Установка зависимостей 
-```sh
-pip install -r requirements.txt
-```
 #### Запуск тестирования
 ```
 python -m unittest discover -s tests
