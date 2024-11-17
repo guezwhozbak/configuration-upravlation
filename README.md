@@ -12,4 +12,4 @@
 
 #### Домашние задания
 
-[Задание №1] (https://github.com/guezwhozbak/configuration-upravlation/tree/main/homework1)
+[Задание №1](https://github.com/guezwhozbak/configuration-upravlation/tree/main/homework1)
