@@ -24,11 +24,11 @@ python src/main.py --graphviz_path /path/to/graphviz --repo_path /path/to/repo -
 
 Тестирование и запуск скрипта:
 
-![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework2/screenshots/hw2_1.jpg)
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework2/screenshots/hw21.jpg)
 
 Полученный граф:
 
-![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework2/screenshots/hw2_2.jpg)
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework2/screenshots/hw22.jpg)
 
 ## Результаты прогона тестов
 
