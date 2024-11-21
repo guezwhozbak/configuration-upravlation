@@ -53,7 +53,7 @@ class ShellGUI:
             raise
 
         # Устанавливаем текущий рабочий каталог на корневую директорию виртуальной файловой системы
-        os.chdir('virtual_fs/virtual_fs')
+        os.chdir('virtual_fs')
         return 'virtual_fs'
 
     def run(self):
