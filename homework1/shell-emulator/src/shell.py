@@ -27,7 +27,7 @@ class ShellGUI:
         self.root.title(f"{self.hostname} Shell Emulator")
 
         # Создаем текстовое поле для вывода результатов команд
-        self.output_text = tk.Text(self.root, height=50, width=100)
+        self.output_text = tk.Text(self.root, height=30, width=100)
         self.output_text.pack()
 
         # Создаем поле ввода для команд
