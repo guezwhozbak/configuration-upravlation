@@ -1,0 +1,19 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 8080,
+    "max_connections": 1000,
+    "timeout": 30
+  },
+  "database": {
+    "type": "mysql",
+    "host": "db.example.com",
+    "port": 3306,
+    "username": "admin",
+    "password": "secret"
+  },
+  "logging": {
+    "level": "info",
+    "file": "/var/log/server.log"
+  }
+}
