@@ -1,4 +1,4 @@
-# Git Commit Dependency Visualizer
+# Git Commit Dependency Visualizer (вариант №23)
 
 ## Общее описание
 
