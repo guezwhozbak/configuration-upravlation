@@ -1,4 +1,4 @@
- # Config tool
+# Config tool (вариант №23)
 
 ## Общее описание
 
