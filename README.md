@@ -4,7 +4,7 @@
 #### Практики
 [Практика №1](https://github.com/guezwhozbak/cfg/blob/main/practice1.md)
 
-[Практика №2](https://github.com/guezwhozbak/cfg/blob/main/practice2.md) (сделана не до конца)
+[Практика №2](https://github.com/guezwhozbak/cfg/blob/main/practice2.md) 
 
 [Практика №3](https://github.com/guezwhozbak/cfg/blob/main/practice3.md) 
 
