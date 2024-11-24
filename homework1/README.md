@@ -1,4 +1,4 @@
- # Shell Emulator
+ # Shell Emulator (вариант №23)
 
 ## Общее описание
 
