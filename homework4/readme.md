@@ -8,6 +8,11 @@
 
 ### Ассемблер
 - **assemble(input_file, output_file, log_file)**: Преобразует текстовый файл с командами в бинарный файл и записывает логи в YAML формате.
+  
+- **LOAD_CONST**: Загрузка константы.
+- **READ_MEM**: Чтение значения из памяти.
+- **WRITE_MEM**: Запись значения в память.
+- **MAX**: Бинарная операция: max()
 
 ### Интерпретатор
 - **interpret(input_file, output_file, memory_range)**: Выполняет команды из бинарного файла и сохраняет значения из указанного диапазона памяти в YAML формате.
@@ -34,19 +39,23 @@ python -m interpreter.interpreter examples/max_program.bin examples/max_result.y
 
 Исходный файл **max_program.asm**
 
-![image]()
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework4/screenshots/hw4-1.jpg)
+
 Запуск ассемблера:
 
-![image]()
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework4/screenshots/hw4-2.png)
+
 Файл-лог **max_program.yaml** после запуска ассемблера:
 
-![image]()
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework4/screenshots/hw4-3.jpg)
+
 Запуск интерпретатора: 
 
-![image]()
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework4/screenshots/hw4-4.png)
+
 Файл-результат **max_result.yaml**:
 
-![image]()
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/homework4/screenshots/hw4-5.jpg)
 
 ## Результаты прогона тестов
 
