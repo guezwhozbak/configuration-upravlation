@@ -314,3 +314,66 @@ dir /B > files.lst
 Вместо gcc можно использовать другой компилятор командной строки, но на вход ему должны подаваться два модуля: prog и data. Если используете не Windows, то исправьте вызовы команд на их эквиваленты из вашей ОС. В makefile должны быть, как минимум, следующие задачи: all, clean, archive. Обязательно покажите на примере, что уже сделанные подзадачи у вас не перестраиваются.
 
 ### Решение
+
+Makefile:
+```make
+# Компилятор
+CC = gcc
+
+# Исходные файлы
+SRC = prog.c data.c
+
+# Объектные файлы
+OBJ = prog.o data.o
+
+# Исполняемый файл
+TARGET = prog.exe
+
+# Архив
+ARCHIVE = distr.zip
+
+# Список файлов
+FILES_LIST = files.lst
+
+# Цель all
+all: $(TARGET) $(FILES_LIST) $(ARCHIVE)
+	@echo "All done. Let's go outside!"
+
+# Цель для компиляции
+$(TARGET): $(OBJ)
+	$(CC) $(OBJ) -o $(TARGET)
+
+# Цель для создания объектных файлов
+%.o: %.c
+	$(CC) -c $< -o $@
+
+# Цель для создания списка файлов
+$(FILES_LIST):
+	@echo "Creating file list..."
+	ls > $(FILES_LIST)
+
+# Цель для создания архива
+$(ARCHIVE): $(TARGET) $(FILES_LIST)
+	@echo "Creating archive..."
+	7z a $(ARCHIVE) *.*
+
+# Цель для очистки
+clean:
+	rm -f $(OBJ) $(TARGET) $(FILES_LIST) $(ARCHIVE)
+	@echo "Cleaned up all temporary files."
+
+# Цель для создания архива
+archive: $(ARCHIVE)
+	@echo "Archive created: $(ARCHIVE)"
+
+# PHONY цели
+.PHONY: all clean archive
+```
+Проверка работоспособности all, clean, archive:
+
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-5.jpg)
+
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-6.jpg)
+
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-7.jpg)
+
