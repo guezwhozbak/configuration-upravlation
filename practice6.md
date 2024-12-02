@@ -377,3 +377,7 @@ archive: $(ARCHIVE)
 
 ![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-7.jpg)
 
+При повторном запуске make all:
+
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-8.jpg)
+
