@@ -94,7 +94,7 @@ drama_poetry: writing
 ```
 Выполнение команды **make** для проверки работоспособности: 
 
-![image](https://github.com/guezwhozbak/configuration-upravlation/tree/main/practice6/6-1.jpg)
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-1.jpg)
 
 ## Задача №2
 
@@ -191,7 +191,7 @@ drama_poetry.done: writing.done
 ```
 Выполнение команды **make** для проверки работоспособности: 
 
-![image](https://github.com/guezwhozbak/configuration-upravlation/tree/main/practice6/6-2.jpg)
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-2.jpg)
 
 ## Задача №3
 
@@ -299,12 +299,18 @@ drama_poetry.done: writing.done
 ```
 Проверка работоспобности all и clean:
 
-![image](https://github.com/guezwhozbak/configuration-upravlation/tree/main/practice6/6-3.jpg)
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-3.jpg)
 
-![image](https://github.com/guezwhozbak/configuration-upravlation/tree/main/practice6/6-4.jpg)
+![image](https://github.com/guezwhozbak/configuration-upravlation/blob/main/practice6/6-4.jpg)
 
 ## Задача 4
 
-
+Написать makefile для следующего скрипта сборки:
+```
+gcc prog.c data.c -o prog
+dir /B > files.lst
+7z a distr.zip *.*
+```
+Вместо gcc можно использовать другой компилятор командной строки, но на вход ему должны подаваться два модуля: prog и data. Если используете не Windows, то исправьте вызовы команд на их эквиваленты из вашей ОС. В makefile должны быть, как минимум, следующие задачи: all, clean, archive. Обязательно покажите на примере, что уже сделанные подзадачи у вас не перестраиваются.
 
 ### Решение
