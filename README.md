@@ -12,6 +12,8 @@
 
 [Практика №5](https://github.com/guezwhozbak/cfg/blob/main/practice5.md) 
 
+[Практика №6](https://github.com/guezwhozbak/cfg/blob/main/practice6.md) 
+
 #### Домашние задания (вариант №23)
 
 [Задание №1](https://github.com/guezwhozbak/configuration-upravlation/tree/main/homework1)
